@@ -2,7 +2,8 @@ export interface UnitMeasurement {
 
     unitId: number;
     unitName: string;
+    unitSymbol: string;
     unitBelongsSI: boolean;
-    unitValue: number
+    unitValue: number;
     unitCategory?: string;
 }[];
