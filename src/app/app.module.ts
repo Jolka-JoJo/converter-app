@@ -6,12 +6,14 @@ import { AppComponent } from './app.component';
 import { MainComponent } from './pages/main/main.component';
 import { UnitsSIComponent } from './pages/units-si/units-si.component';
 import { MatTableModule } from '@angular/material/table';
+import { MeniuComponent } from './components/meniu/meniu.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MainComponent,
     UnitsSIComponent,
+    MeniuComponent,
   ],
   imports: [
     BrowserModule,
