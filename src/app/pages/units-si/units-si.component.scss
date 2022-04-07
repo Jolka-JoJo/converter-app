@@ -1,11 +1,22 @@
-.tableUnitsSI{
+
+.units-si-main{
+
+  background-image:
+  linear-gradient(to bottom, rgba(153, 154, 157, 0.714), rgba(214, 228, 243, 0.336)), url("/assets/img/background.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 100%;
+
+  .tableUnitsSI{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 200px;
+    padding-top: 100px;
 
     table {
-    width: 50%;
+      width: 50%;
+    }
   }
 }
 
