@@ -1,3 +1,33 @@
 <app-meniu></app-meniu>
+<div class = "main">
+  <div class="card card-main" style="width: 60%;">
+    <div class="card-body">
+      <mat-tab-group>
+        <mat-tab label = "Ilgis">
+          <app-unit-form nameCategory = "ilgio" ></app-unit-form>
+        </mat-tab>
 
-<p *ngFor="let item of measurement"> {{item.unitName}} = {{item.unitValue}} m</p>
+        <mat-tab label = "Plotas">
+          <app-unit-form nameCategory = "ploto" ></app-unit-form>
+        </mat-tab>
+
+        <mat-tab label = "Tūris">
+          <app-unit-form nameCategory = "tūrio" ></app-unit-form>
+        </mat-tab>
+
+        <mat-tab label = "Laikas">
+          <app-unit-form nameCategory = "laiko" ></app-unit-form>
+        </mat-tab>
+
+        <mat-tab label = "Svoris">
+          <app-unit-form nameCategory = "svorio" ></app-unit-form>
+        </mat-tab>
+
+        <mat-tab label = "Informacija">
+          <app-unit-form nameCategory = "informacijos" ></app-unit-form>
+        </mat-tab>
+      </mat-tab-group>
+    </div>
+  </div>
+</div>
+

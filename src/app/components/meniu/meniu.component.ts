@@ -6,7 +6,6 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./meniu.component.scss']
 })
 export class MeniuComponent implements OnInit {
-  // private LOGO = require("src/assets/logo.png");
   logoSrc = "src/assets/logo.png";
   constructor() { }
 

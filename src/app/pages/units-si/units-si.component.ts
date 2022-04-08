@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import data from 'src/db.json';
 import { UnitMeasurement } from 'src/app/model/unit-measurement';
+import { UnitsServiceService } from 'src/app/services/units-service.service';
+
 
 @Component({
   selector: 'app-units-si',
@@ -9,44 +10,18 @@ import { UnitMeasurement } from 'src/app/model/unit-measurement';
 })
 export class UnitsSIComponent implements OnInit {
 
-  unitsSi: Array<UnitMeasurement> = [];
+  unitsSi!: UnitMeasurement[];
 
   displayedColumns: string[] = ['seqNo','unitName', 'unitValue', 'unitSymbol', "category"];
   dataSource = this.unitsSi;
 
-  constructor() { }
+  constructor(private unitService: UnitsServiceService) { }
 
   ngOnInit(): void {
 
-    data.distance.units.forEach(obj => {
-      if(obj.unitBelongsSI) {
-        this.unitsSi.push(obj);
-      }
-    });
+    this.unitService.getSIUnits().subscribe((unitsSI) =>{
+      this.unitsSi=unitsSI;
+  });
 
-    data.capacity.units.forEach(obj => {
-      if(obj.unitBelongsSI) {
-        this.unitsSi.push(obj);
-      }
-    });
-
-    data.weight.units.forEach(obj => {
-      if(obj.unitBelongsSI) {
-        this.unitsSi.push(obj);
-      }
-    });
-
-    data.time.units.forEach(obj => {
-      if(obj.unitBelongsSI) {
-        this.unitsSi.push(obj);
-      }
-    });
-
-    data.area.units.forEach(obj => {
-      if(obj.unitBelongsSI) {
-        this.unitsSi.push(obj);
-      }
-    });
-  }
-
+}
 }
