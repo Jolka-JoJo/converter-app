@@ -69,8 +69,8 @@
     {"unitId": 59, "unitName": "kvadratinis colis", "unitSymbol": "h", "unitBelongsSI": false, "unitValue": 0.00064516, "unitCategory": "ploto"  },
     {"unitId": 60, "unitName": "kvadratinė pėda", "unitSymbol": "", "unitBelongsSI": false, "unitValue": 0.09290304, "unitCategory": "ploto"  },
     {"unitId": 61, "unitName": "kvadratinis jardas", "unitSymbol": "", "unitBelongsSI": false, "unitValue": 0.83612736 , "unitCategory": "ploto" },
-    {"unitId": 62, "unitName": "aras (365 paros)", "unitSymbol": "", "unitBelongsSI": false, "unitValue": 100 , "unitCategory": "ploto" },
-    {"unitId": 63, "unitName": "hektaras (365 paros)", "unitSymbol": "", "unitBelongsSI": false, "unitValue": 10000 , "unitCategory": "ploto" },
-    {"unitId": 64, "unitName": "akras (365 paros)", "unitSymbol": "", "unitBelongsSI": false, "unitValue": 4047, "unitCategory": "ploto"  }
+    {"unitId": 62, "unitName": "aras", "unitSymbol": "", "unitBelongsSI": false, "unitValue": 100 , "unitCategory": "ploto" },
+    {"unitId": 63, "unitName": "hektaras", "unitSymbol": "", "unitBelongsSI": false, "unitValue": 10000 , "unitCategory": "ploto" },
+    {"unitId": 64, "unitName": "akras", "unitSymbol": "", "unitBelongsSI": false, "unitValue": 4047, "unitCategory": "ploto"  }
 
 ]}
