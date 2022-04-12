@@ -15,7 +15,7 @@
 
     {"unitId": 10, "unitName": "gramas", "unitSymbol": "g", "unitBelongsSI": false, "unitValue": 0.001, "unitCategory": "svorio" },
     {"unitId": 11, "unitName": "greinas", "unitSymbol": "gr", "unitBelongsSI": false, "unitValue": 0.01, "unitCategory": "svorio" },
-    {"unitId": 12, "unitName": "miligramas", "unitSymbol": "mg", "unitBelongsSI": false, "unitValue": 0.1, "unitCategory": "svorio" },
+    {"unitId": 12, "unitName": "miligramas", "unitSymbol": "mg", "unitBelongsSI": false, "unitValue": 0.000001, "unitCategory": "svorio" },
     {"unitId": 13, "unitName": "kilogramas", "unitSymbol": "kg", "unitBelongsSI": true, "unitValue": 1 , "unitCategory": "svorio"},
     {"unitId": 14, "unitName": "centneris", "unitSymbol": "cnt", "unitBelongsSI": false, "unitValue": 1000, "unitCategory": "svorio" },
     {"unitId": 15, "unitName": "tona", "unitSymbol": "t", "unitBelongsSI": false, "unitValue": 0.0254, "unitCategory": "svorio" },
