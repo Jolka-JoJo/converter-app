@@ -1,6 +1,7 @@
+import { UnitCategory } from './../../model/unit-category';
 import { Component, OnInit } from '@angular/core';
 import { UnitMeasurement } from 'src/app/model/unit-measurement';
-import data from 'src/db.json';
+import { UnitsServiceService } from 'src/app/services/units-service.service';
 
 @Component({
   selector: 'app-main',
@@ -9,11 +10,17 @@ import data from 'src/db.json';
 })
 export class MainComponent implements OnInit {
   measurement?: UnitMeasurement[];
+  categories!: UnitCategory[];
+  category?: UnitMeasurement[];
 
-  constructor() { }
+
+  constructor(private unitServise: UnitsServiceService) { }
 
   ngOnInit(): void {
-    this.measurement = data.distance.units;
+    this.unitServise.getUnits().subscribe((units) =>{
+      this.measurement = units;}
+      );
+
   }
 
 }

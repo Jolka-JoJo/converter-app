@@ -1,0 +1,16 @@
+.main{
+  box-sizing: border-box;
+  background-image:
+  linear-gradient(to bottom, rgba(153, 154, 157, 0.714), rgba(214, 228, 243, 0.336)), url("/assets/img/background.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  height: calc(100% - 106px);
+  padding-top: 100px;
+
+  .card-main{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+  }
+}
