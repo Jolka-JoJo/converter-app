@@ -24,4 +24,8 @@ export class UnitsServiceService {
     return this.http.get<UnitMeasurement[]>(this.apiUrl + "?unitBelongsSI=true");
   }
 
+  getUnitById(id:number): Observable<UnitMeasurement[]>{
+    return this.http.get<UnitMeasurement[]>(this.apiUrl + "?unitId=" + id);
+  }
+
 }

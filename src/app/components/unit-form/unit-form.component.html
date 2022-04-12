@@ -1,15 +1,15 @@
 <div class="form-fields">
   <mat-form-field appearance="fill">
     <mat-label>Versti iš</mat-label>
-    <mat-select>
-      <mat-option *ngFor="let unit of measurement" value="one">{{unit.unitName}}</mat-option>
+    <mat-select [(ngModel)]="unitsFromId" (ngModelChange)="changeUnits($event)">
+      <mat-option *ngFor="let unit of measurement" [value]="unit.unitId" >{{unit.unitName}}</mat-option>
     </mat-select>
   </mat-form-field>
 
   <mat-form-field appearance="fill">
     <mat-label>Versti į</mat-label>
-    <mat-select>
-      <mat-option *ngFor="let unit of measurement" value="one">{{unit.unitName}}</mat-option>
+    <mat-select [(ngModel)]="unitsToId" (ngModelChange)="changeUnits($event)">
+      <mat-option *ngFor="let unit of measurement" [value]="unit.unitId">{{unit.unitName}}</mat-option>
     </mat-select>
   </mat-form-field>
 </div>
@@ -17,12 +17,11 @@
 <div class = form-fields>
   <mat-form-field appearance="fill">
     <mat-label>Reikšmė iš</mat-label>
-    <input matInput type="number" class="example-right-align" placeholder="0.00">
+    <input (keyup)="onKeyFrom($event)" matInput type="number" class="example-right-align" placeholder="0.00" [value]="valueFrom" autocomplete="off">
   </mat-form-field>
 
   <mat-form-field appearance="fill">
     <mat-label>Reikšmė Į</mat-label>
-    <input matInput type="number" class="example-right-align" placeholder="0.00">
+    <input (keyup)="onKeyTo($event)" matInput type="number" class="example-right-align" placeholder="0.00" [value]="valueTo" autocomplete="off">
   </mat-form-field>
-  <div>the input value is : {{text}}</div>
 </div>
