@@ -1,0 +1,28 @@
+.prefixes-main{
+
+  background-image:
+  linear-gradient(to bottom, rgba(153, 154, 157, 0.714), rgba(214, 228, 243, 0.336)), url("/assets/img/background.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  height: auto;
+
+  .tablePrefixes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+
+    table {
+      min-width: 800px;
+      margin-bottom: 100px;
+
+    }
+    @media screen and (max-width: 1200px) {
+      table {
+        width: 90%;
+        min-width: auto;
+      }
+  }
+  }
+}

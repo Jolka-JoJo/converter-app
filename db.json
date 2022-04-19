@@ -74,7 +74,6 @@
     {"unitId": 64, "unitName": "akras (365 paros)", "unitSymbol": "", "unitBelongsSI": false, "unitValue": 4047, "unitCategory": "ploto"  }
 ],
 
-
   "prefixes":[
     {"prefixId": 0, "prefixName": "jota", "prefixSymbol": "Y", "prefixValue": 10e24},
     {"prefixId": 1, "prefixName": "zeta", "prefixSymbol": "Z", "prefixValue": 10e21},
@@ -98,10 +97,4 @@
     {"prefixId": 19, "prefixName": "jokto", "prefixSymbol": "y", "prefixValue": 10e-24}
 
   ]
-
-
-
-
-
-
 }
