@@ -16,7 +16,7 @@ import { MatInputModule } from '@angular/material/input';
 import { UnitFormComponent } from './components/unit-form/unit-form.component';
 import { MatSelectModule } from '@angular/material/select';
 import { FormsModule } from '@angular/forms';
-import { PrefixComponent } from './components/prefix/prefix.component';
+// import { PrefixComponent } from './components/prefix/prefix.component';
 import { PrefixesComponent } from './pages/prefixes/prefixes.component';
 
 @NgModule({
@@ -26,7 +26,7 @@ import { PrefixesComponent } from './pages/prefixes/prefixes.component';
     UnitsSIComponent,
     MeniuComponent,
     UnitFormComponent,
-    PrefixComponent,
+
     PrefixesComponent,
   ],
   imports: [
