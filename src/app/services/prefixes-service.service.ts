@@ -1,6 +1,9 @@
-import { Injectable } from '@angular/core';
+
 import { UnitPrefix } from './../model/unit-prefix';
 import {HttpClient, HttpHeaders} from '@angular/common/http'
+
+
+import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 
 @Injectable({
@@ -11,8 +14,12 @@ export class PrefixesServiceService {
   constructor(private http:HttpClient) { }
 
   getPrefixes() : Observable<UnitPrefix[]>{
+
     return this.http.get<UnitPrefix[]>(this.apiUrl);
   }
+
+
+
 
 }
 

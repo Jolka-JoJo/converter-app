@@ -2,7 +2,7 @@ export interface UnitPrefix {
   prefixId: number;
   prefixName: string;
   prefixSymbol: string;
-  prefixValue: number;
+  prefixValue: string;
 }[];
 
 
