@@ -24,8 +24,7 @@ export class UnitFormComponent implements OnInit{
 
   ngOnInit(): void {
     this.unitServise.getCategoryUnits(this.nameCategory).subscribe((units) =>{
-      this.measurement = units;
-    console.log()}
+      this.measurement = units;}
       );
   }
 
