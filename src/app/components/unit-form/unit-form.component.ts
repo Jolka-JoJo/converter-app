@@ -24,7 +24,8 @@ export class UnitFormComponent implements OnInit{
 
   ngOnInit(): void {
     this.unitServise.getCategoryUnits(this.nameCategory).subscribe((units) =>{
-      this.measurement = units;}
+      this.measurement = units;
+    console.log()}
       );
   }
 
@@ -71,8 +72,8 @@ export class UnitFormComponent implements OnInit{
       this.unitValueTo = element.unitValue;
     })
 
-    from ? this.valueTo = (this.valueFrom * this.unitValueFrom) / this.unitValueTo :
-    this.valueFrom = (this.valueTo * this.unitValueTo) / this.unitValueFrom;
+    from ? this.valueTo =  Math.floor(((this.valueFrom * this.unitValueFrom) / this.unitValueTo)*10000000000)/10000000000 :
+    this.valueFrom = Math.floor(((this.valueTo * this.unitValueTo) / this.unitValueFrom)*10000000000)/10000000000;
   }
 
 }

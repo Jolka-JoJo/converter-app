@@ -2,7 +2,7 @@
   "measurements":[
 
 
-    {"unitId": 0, "unitName": "milimetras", "unitSymbol": "mm", "unitBelongsSI": false, "unitValue": 0.001, "unitCategory": "ilgio" },
+    {"unitId": 65, "unitName": "milimetras", "unitSymbol": "mm", "unitBelongsSI": false, "unitValue": 0.001, "unitCategory": "ilgio" },
     {"unitId": 1, "unitName": "centimetras", "unitSymbol": "cm", "unitBelongsSI": false, "unitValue": 0.01, "unitCategory": "ilgio"},
     {"unitId": 2, "unitName": "decimetras", "unitSymbol": "dm", "unitBelongsSI": false, "unitValue": 0.1, "unitCategory": "ilgio" },
     {"unitId": 3, "unitName": "metras", "unitSymbol": "m", "unitBelongsSI": true, "unitValue": 1, "unitCategory": "ilgio" },
