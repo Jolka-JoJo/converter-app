@@ -10,13 +10,21 @@ import { PrefixesServiceService } from 'src/app/services/prefixes-service.servic
 export class PrefixesComponent implements OnInit {
 
   unitsPref!: UnitPrefix[];
+  prefixValue!: String[];
   displayedColumns: string[] = ['seqNo','prefixName', 'prefixSymbol', 'prefixValue'];
-  dataSource = this.unitsPref;
-  constructor(private prefixService:PrefixesServiceService ) { }
+  constructor(private prefixService:PrefixesServiceService ) {}
 
-  ngOnInit(): void {
-    this.prefixService.getPrefixes().subscribe((unitsPR) => {
+  ngOnInit(){
+    this.getPrefixes();
+  }
+
+  getPrefixes(){
+    this.prefixService.getPrefixes().subscribe((unitsPR: any[]) => {
       this.unitsPref = unitsPR;
+      this.unitsPref.forEach(element => {
+        var prefParts = element.prefixValue.split("e");
+        element.prefixValue = prefParts[1];
+      });
     });
   }
 

@@ -16,7 +16,12 @@
     table {
       min-width: 800px;
       margin-bottom: 100px;
-
+        .prefixIndex{
+          display: flex;
+          font-size: 11px;
+          margin-top: -30px;
+          margin-left: 20px;
+        }
     }
     @media screen and (max-width: 1200px) {
       table {

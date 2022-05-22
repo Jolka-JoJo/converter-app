@@ -21,7 +21,10 @@
 
       <ng-container matColumnDef="prefixValue">
         <th mat-header-cell *matHeaderCellDef> Simbolis </th>
-        <td mat-cell *matCellDef="let element"> {{element.prefixValue}} </td>
+        <td mat-cell *matCellDef="let element">
+          <div>
+            <span>10 </span> <span class="prefixIndex"> {{element.prefixValue}}</span>
+          </div></td>
       </ng-container>
 
 

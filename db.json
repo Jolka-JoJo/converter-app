@@ -42,7 +42,7 @@
     {"unitId": 35, "unitName": "anglų bušelis", "unitSymbol": "british bushel", "unitBelongsSI": false, "unitValue": 0.036368735, "unitCategory": "tūrio" },
 
     {"unitId": 36, "unitName": "bitas", "unitSymbol": "b", "unitBelongsSI": false, "unitValue": 0.125, "unitCategory": "informacijos"},
-    {"unitId": 37, "unitName": "baitas", "unitSymbol": "B", "unitBelongsSI": true, "unitValue": 1, "unitCategory": "informacijos" },
+    {"unitId": 37, "unitName": "baitas", "unitSymbol": "B", "unitBelongsSI": false, "unitValue": 1, "unitCategory": "informacijos" },
     {"unitId": 38, "unitName": "kilobaitas", "unitSymbol": "KB", "unitBelongsSI": false, "unitValue": 1024, "unitCategory": "informacijos" },
     {"unitId": 39, "unitName": "megabaitas", "unitSymbol": "MG", "unitBelongsSI": false, "unitValue": 1048576, "unitCategory": "informacijos"},
     {"unitId": 40, "unitName": "gigabaitas", "unitSymbol": "GB", "unitBelongsSI": false, "unitValue": 1073741824, "unitCategory": "informacijos" },
